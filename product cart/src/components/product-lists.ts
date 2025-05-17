@@ -23,7 +23,7 @@ let products: Product[] = [];
 let cart: CartItem[] = [];
 
 async function fetchProducts() {
-  const res = await fetch('./data/data.json');
+  const res = await fetch('/data.json');
   products = await res.json();
   renderProducts();
 }
