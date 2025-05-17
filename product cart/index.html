@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body style="background: #f9f6f3;">
+  <div style="display: flex; gap: 2rem; align-items: flex-start; max-width: 1400px; margin: 0 auto; padding: 2rem;">
+    <main style="flex: 2;">
+      <h1 style="text-align: left; color: #2d1c0b;">Desserts</h1>
+      <div class="product-grid" id="productGrid">
+        <!-- Products will be rendered here by TypeScript -->
+      </div>
+    </main>
+    <aside style="flex: 1; background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); padding: 2rem 1.5rem; min-width: 320px; max-width: 350px;">
+      <h2 style="color: #b85c2b; margin-bottom: 1.5rem;">
+        Your Cart (<span id="cartCount">0</span>)
+      </h2>
+      <div id="cartItems">
+        <p>Your added items will appear here</p>
+      </div>
+      <div style="margin-top: 2rem;">
+        <strong>Order Total: $<span id="cartTotal">0.00</span></strong>
+      </div>
+      <button id="confirmOrderBtn" style="margin-top: 1.5rem; width: 100%; background: #b85c2b; color: #fff; border: none; padding: 1em; border-radius: 8px; font-size: 1.1em; cursor: pointer;">
+        Confirm Order
+      </button>
+    </aside>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script type="module" src=".src/main.ts"></script>
+</body>
+</html>
